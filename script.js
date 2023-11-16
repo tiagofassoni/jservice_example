@@ -16,6 +16,8 @@ $("#btn-get-clues").on('click', function() {
     function(data) {
         my_clues = data;
         console.log(my_clues);
+        console.table(Object.values(my_clues).map(x=>stdlib.utils.flattenObject(x)))
+
     }
     )
 })
